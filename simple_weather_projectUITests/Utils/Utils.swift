@@ -8,6 +8,8 @@
 import Foundation
 
 class Utils{
+    
+    
     struct WeatherData: Codable {
         let name: String
         let message: String?
@@ -36,38 +38,33 @@ class Utils{
         let country: String
     }
     
-    
-    
-    
-    func getWeatherDataByCity(city:String) -> Any {
+
+        func getWeatherData(city:String,apicompletionHandler: @escaping (_ data:WeatherData?) -> Void){
         let weatherURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=ae33ba58ccfc685593adadaaac3626da"
-        
         let urlString = "\(weatherURL)&q=\(city)"
-        
-        let apicall = URLSession.shared.dataTask(with:URL(string: urlString)!,completionHandler: { data, response, error in
+
+        let apicall = URLSession.shared.dataTask(with:URL(string: urlString)!,completionHandler: { (data, response, error ) -> Void in
             guard let data = data , error == nil else{
                 print("Somthing Wrong..")
                 return
             }
-            
-            
+
             var result:WeatherData?
             do{
                 result = try JSONDecoder().decode(WeatherData.self, from: data)
             }catch{
                 print("Somting Wrong in API, \(error.localizedDescription)")
             }
-            
-            guard let json = result else{
-                return
+
+            if let data = result{
+                apicompletionHandler(data)
+            }else{
+                print("Weather data is nill")
             }
-            
-            return json
         })
+
         apicall.resume()
-        
     }
-    
-    
+
     
 }
