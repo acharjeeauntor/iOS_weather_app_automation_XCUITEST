@@ -16,12 +16,22 @@ class ReviewScreen:BaseTest{
         searchTextField.tap()
         searchTextField.typeText(cityName)
         app/*@START_MENU_TOKEN@*/.buttons["Go"]/*[[".keyboards",".buttons[\"go\"]",".buttons[\"Go\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.wait(for: XCUIApplication.State.unknown, timeout: 10)
+        app.wait(for: XCUIApplication.State.unknown, timeout:6 )
     }
     
     
     func getEnvironmentStatus() -> String
     {
         return app.staticTexts.element(boundBy:0).label
+    }
+    
+    func getCityName() -> String
+    {
+        return app.staticTexts.element(boundBy:1).label
+    }
+    
+    func getTemp() -> String
+    {
+        return app.staticTexts.element(boundBy:2).label
     }
 }

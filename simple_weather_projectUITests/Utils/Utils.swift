@@ -40,7 +40,7 @@ class Utils{
     
 
         func getWeatherData(city:String,apicompletionHandler: @escaping (_ data:WeatherData?) -> Void){
-        let weatherURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=ae33ba58ccfc685593adadaaac3626da"
+        let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=ae33ba58ccfc685593adadaaac3626da&units=metric"
         let urlString = "\(weatherURL)&q=\(city)"
 
         let apicall = URLSession.shared.dataTask(with:URL(string: urlString)!,completionHandler: { (data, response, error ) -> Void in
