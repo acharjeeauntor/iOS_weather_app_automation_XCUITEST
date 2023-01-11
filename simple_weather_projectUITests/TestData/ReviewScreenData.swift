@@ -8,5 +8,5 @@
 import Foundation
 
 enum ReviewScreenData:String{
-    case cityName = "Dhaka"
+    case cityName = "Tangail"
 }

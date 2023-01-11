@@ -34,4 +34,30 @@ class ReviewScreen:BaseTest{
     {
         return app.staticTexts.element(boundBy:2).label
     }
+    
+    func getFeelsLikeData() -> String
+    {
+        return app.staticTexts.element(boundBy:7).label
+    }
+    
+    func getMinTempData() -> String
+    {
+        return app.staticTexts.element(boundBy:9).label
+    }
+    
+    func getMaxTempData() -> String
+    {
+        return app.staticTexts.element(boundBy:11).label
+    }
+    
+    func getPressureData() -> String
+    {
+        return app.staticTexts.element(boundBy:13).label
+    }
+    
+    func getHumidityData() -> String
+    {
+        return app.staticTexts.element(boundBy:15).label
+    }
+    
 }

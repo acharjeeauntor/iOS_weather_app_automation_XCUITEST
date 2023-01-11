@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A6CFF296F245F004E8DB5 /* XCUIElement.swift */; };
 		2AA0669C296E460F0020E5D4 /* ReviewScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0669B296E460F0020E5D4 /* ReviewScreenData.swift */; };
 		2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7A8296B282A00A81B67 /* BaseTest.swift */; };
 		2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7AA296B2C0E00A81B67 /* ReviewScreen.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2A6CFF296F245F004E8DB5 /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
 		2AA0669B296E460F0020E5D4 /* ReviewScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreenData.swift; sourceTree = "<group>"; };
 		2AA0A79A296B27E400A81B67 /* simple_weather_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simple_weather_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA0A7A8296B282A00A81B67 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2A6CFE296F242B004E8DB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A2A6CFF296F245F004E8DB5 /* XCUIElement.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2AA0669A296E45D20020E5D4 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		2AA0A7AE296B3B1E00A81B67 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2A2A6CFE296F242B004E8DB5 /* Extensions */,
 				2AA0A7AF296B3B2D00A81B67 /* Utils.swift */,
 			);
 			path = Utils;
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */,
+				2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */,
 				2AA0669C296E460F0020E5D4 /* ReviewScreenData.swift in Sources */,
 				2AA0A7AD296B2C1C00A81B67 /* ReviewScreenTest.swift in Sources */,
 				2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */,
