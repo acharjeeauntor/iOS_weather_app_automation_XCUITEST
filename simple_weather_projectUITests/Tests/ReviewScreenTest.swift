@@ -19,7 +19,7 @@ class ReviewScreenTest:BaseTest{
         reviewScreen.enterCityName(cityName: cityName)
         
         // Actual Result
-        let actualStatus = reviewScreen.getEnvironmentStatus()
+        let actualStatus = reviewScreen.getEnvironmentStatus().lowercased()
         let actualCityName = reviewScreen.getCityName()
         let actualTempValue = reviewScreen.getTemp()
         
@@ -29,10 +29,11 @@ class ReviewScreenTest:BaseTest{
             if let apidata = data{
                 
                 // Expected Result
-                let expectedStatus = apidata.weather[0].main
+                let expectedStatus = apidata.weather[0].description
                 let expectedCityName = apidata.name
                 let tempValue = String(round(apidata.main.temp))
                 let expectedTempValue = String(tempValue.split(separator: ".")[0])
+
                 
                 XCTAssertEqual(expectedCityName, actualCityName,"City Name is incorrect")
                 XCTAssertEqual(expectedStatus, actualStatus,"Current environment status is incorrect")
@@ -77,7 +78,8 @@ class ReviewScreenTest:BaseTest{
                 let humidityValue = String(round(apidata.main.humidity))
                 let expectedHumidityValue = String(humidityValue.split(separator: ".")[0])+" %"
                 
-           
+
+                                
                 XCTAssertEqual(expectedFeelsLikeValue, actualFeelsLikeValue,"Feels Like Value is incorrect")
                 XCTAssertEqual(expectedMinTempValue, actualMinTempValue,"Min Temp Value is incorrect")
                 XCTAssertEqual(expectedMaxTempValue, actualMaxTempValue,"Max Temp Value is incorrect")

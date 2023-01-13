@@ -10,54 +10,67 @@ import XCTest
 
 let utils = Utils()
 class ReviewScreen:BaseTest{
+    
+    // Identifiers
+    private var searchFieldIdentifier = "search"
+    private var tempTextFieldIdentifier = "temp"
+    private var tempStatusTextFieldIdentifier = "status"
+    private var cityTextFieldIdentifier = "city"
+    private var FeelsLikeTextFieldIdentifier = "feelsLike"
+    private var minTempTextFieldIdentifier = "mintemp"
+    private var maxTempTextFieldIdentifier = "maxtemp"
+    private var humidityTextFieldIdentifier = "humidity"
+    private var pressureTextFieldIdentifier = "pressure"
+    
+    
 
     func enterCityName(cityName:String){
-       var searchTextField =  app.windows.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
-        searchTextField.tap()
-        searchTextField.typeText(cityName)
-        app/*@START_MENU_TOKEN@*/.buttons["Go"]/*[[".keyboards",".buttons[\"go\"]",".buttons[\"Go\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        var searchField = app.searchFields[searchFieldIdentifier]
+        searchField.tap()
+        searchField.typeText(cityName)
+        app.buttons["Go"].tap()
         app.wait(for: XCUIApplication.State.unknown, timeout:6 )
     }
     
     
     func getEnvironmentStatus() -> String
     {
-        return app.staticTexts.element(boundBy:0).label
+        return app.staticTexts[tempStatusTextFieldIdentifier].label
     }
     
     func getCityName() -> String
     {
-        return app.staticTexts.element(boundBy:1).label
+        return app.staticTexts[cityTextFieldIdentifier].label
     }
     
     func getTemp() -> String
     {
-        return app.staticTexts.element(boundBy:2).label
+        return app.staticTexts[tempTextFieldIdentifier].label
     }
     
     func getFeelsLikeData() -> String
     {
-        return app.staticTexts.element(boundBy:7).label
+        return app.staticTexts[FeelsLikeTextFieldIdentifier].label
     }
     
     func getMinTempData() -> String
     {
-        return app.staticTexts.element(boundBy:9).label
+        return app.staticTexts[minTempTextFieldIdentifier].label
     }
     
     func getMaxTempData() -> String
     {
-        return app.staticTexts.element(boundBy:11).label
+        return app.staticTexts[maxTempTextFieldIdentifier].label
     }
     
     func getPressureData() -> String
     {
-        return app.staticTexts.element(boundBy:13).label
+        return app.staticTexts[pressureTextFieldIdentifier].label
     }
     
     func getHumidityData() -> String
     {
-        return app.staticTexts.element(boundBy:15).label
+        return app.staticTexts[humidityTextFieldIdentifier].label
     }
     
 }
