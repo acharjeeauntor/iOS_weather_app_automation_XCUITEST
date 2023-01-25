@@ -7,17 +7,19 @@
 
 import XCTest
 
-//let utils = Utils()
-
 class ReviewScreenTest:BaseTest{
+    
     let reviewScreen = ReviewScreen()
+    let weatherManager = WeatherManager()
+    
     // Test Data
     let cityName = ReviewScreenData.cityName.rawValue
     
     // TC1: Verify for Searched city, City Name,Current Environment Status,Temp are showing Correctly or not
     func test1_Basic_Temp_Check(){
         reviewScreen.enterCityName(cityName: cityName)
-        
+  
+      
         // Actual Result
         let actualStatus = reviewScreen.getEnvironmentStatus().lowercased()
         let actualCityName = reviewScreen.getCityName()
@@ -93,7 +95,15 @@ class ReviewScreenTest:BaseTest{
     }
     
     
-    
+    // TC3: Get Location name from main project function return value
+    func test3_Peoject_Function_call(){
+        
+        // weatherManager.getAddress(name: cityName), Here getAddress() is the public function of WeatherManager class which is created inside project core file.
+        var returnValue = weatherManager.getAddress(name: cityName)
+        var expectedValue = "Your Location is: \(cityName)"
+        XCTAssertEqual(expectedValue, returnValue,"Location name is incorrect")
+        
+    }
     
 }
 

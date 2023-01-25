@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A6CFF296F245F004E8DB5 /* XCUIElement.swift */; };
+		2A3C549A297AAB340051A5C7 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72528AEDAE600CB1C5B /* WeatherManager.swift */; };
 		2AA0669C296E460F0020E5D4 /* ReviewScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0669B296E460F0020E5D4 /* ReviewScreenData.swift */; };
 		2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7A8296B282A00A81B67 /* BaseTest.swift */; };
 		2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7AA296B2C0E00A81B67 /* ReviewScreen.swift */; };
 		2AA0A7AD296B2C1C00A81B67 /* ReviewScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7AC296B2C1C00A81B67 /* ReviewScreenTest.swift */; };
 		2AA0A7B0296B3B2D00A81B67 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7AF296B3B2D00A81B67 /* Utils.swift */; };
+		2AF46E12297AE8FC00353A3C /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72128AEDA4F00CB1C5B /* WeatherData.swift */; };
+		2AF46E13297AE90000353A3C /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72328AEDA6B00CB1C5B /* WeatherModel.swift */; };
 		73342CB928B01987004C2DA8 /* AllCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73342CB828B01987004C2DA8 /* AllCityViewController.swift */; };
 		738EC72228AEDA4F00CB1C5B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72128AEDA4F00CB1C5B /* WeatherData.swift */; };
 		738EC72428AEDA6B00CB1C5B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72328AEDA6B00CB1C5B /* WeatherModel.swift */; };
@@ -287,8 +290,11 @@
 				2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */,
 				2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */,
 				2AA0669C296E460F0020E5D4 /* ReviewScreenData.swift in Sources */,
+				2A3C549A297AAB340051A5C7 /* WeatherManager.swift in Sources */,
+				2AF46E13297AE90000353A3C /* WeatherModel.swift in Sources */,
 				2AA0A7AD296B2C1C00A81B67 /* ReviewScreenTest.swift in Sources */,
 				2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */,
+				2AF46E12297AE8FC00353A3C /* WeatherData.swift in Sources */,
 				2AA0A7B0296B3B2D00A81B67 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

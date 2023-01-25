@@ -8,6 +8,7 @@
 import Foundation
 import CoreLocation
 
+
 protocol WeatherManagerDelegate {
     
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel)
@@ -22,7 +23,7 @@ struct WeatherManager {
     
     var delegate: WeatherManagerDelegate?
     
-    func fetchWeather(cityName: String) {
+    public func fetchWeather(cityName: String) {
         
         if cityName.contains(" ") {
             
@@ -84,7 +85,7 @@ struct WeatherManager {
     
     func parseJSON(_ weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
-
+        
         do {
             
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
@@ -111,5 +112,12 @@ struct WeatherManager {
             return nil
         }
     }
+    
+   public func getAddress(name:String) -> String{
+        return "Your Location is: \(name)"
+    }
+    
+    
+    
 }
 

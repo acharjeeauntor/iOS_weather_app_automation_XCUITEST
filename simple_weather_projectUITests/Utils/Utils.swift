@@ -9,7 +9,6 @@ import Foundation
 
 class Utils{
     
-    
     struct WeatherData: Codable {
         let name: String
         let message: String?
@@ -66,5 +65,5 @@ class Utils{
         apicall.resume()
     }
 
-    
+
 }

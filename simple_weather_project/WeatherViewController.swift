@@ -13,10 +13,6 @@ import CoreLocation
 class WeatherViewController: UIViewController {
     
     
-   
- 
-    
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var conditionImage: UIImageView!
