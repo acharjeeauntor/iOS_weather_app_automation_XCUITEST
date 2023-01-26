@@ -1,4 +1,5 @@
 import XCTest
+import Foundation
 
 extension XCUIElement {
     func assertContains(text: String) {

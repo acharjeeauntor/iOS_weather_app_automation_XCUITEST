@@ -8,7 +8,7 @@
 import XCTest
 
 class ReviewScreenTest:BaseTest{
-    
+
     let reviewScreen = ReviewScreen()
     let weatherManager = WeatherManager()
     
@@ -17,6 +17,7 @@ class ReviewScreenTest:BaseTest{
     
     // TC1: Verify for Searched city, City Name,Current Environment Status,Temp are showing Correctly or not
     func test1_Basic_Temp_Check(){
+        takeScreenshot(name: "test1_Basic_Temp_Check")
         reviewScreen.enterCityName(cityName: cityName)
   
       
@@ -36,7 +37,7 @@ class ReviewScreenTest:BaseTest{
                 let tempValue = String(round(apidata.main.temp))
                 let expectedTempValue = String(tempValue.split(separator: ".")[0])
 
-                
+             
                 XCTAssertEqual(expectedCityName, actualCityName,"City Name is incorrect")
                 XCTAssertEqual(expectedStatus, actualStatus,"Current environment status is incorrect")
                 XCTAssertEqual(expectedTempValue, actualTempValue,"Current Temp is incorrect")
@@ -50,6 +51,7 @@ class ReviewScreenTest:BaseTest{
     
     // TC2: Verify for Searched city, Max/Min Temp,Pressure,Humidity,Feels Like are showing Correctly or not
     func test2_Advance_Temp_Check(){
+        takeScreenshot(name: "test2_Advance_Temp_Check")
         reviewScreen.enterCityName(cityName: cityName)
         
         // Actual Result
@@ -97,10 +99,11 @@ class ReviewScreenTest:BaseTest{
     
     // TC3: Get Location name from main project function return value
     func test3_Peoject_Function_call(){
+        takeScreenshot(name: "test3_Peoject_Function_call")
         
         // weatherManager.getAddress(name: cityName), Here getAddress() is the public function of WeatherManager class which is created inside project core file.
-        var returnValue = weatherManager.getAddress(name: cityName)
-        var expectedValue = "Your Location is: \(cityName)"
+        let returnValue = weatherManager.getAddress(name: cityName)
+        let expectedValue = "Your Location is: \(cityName)"
         XCTAssertEqual(expectedValue, returnValue,"Location name is incorrect")
         
     }
