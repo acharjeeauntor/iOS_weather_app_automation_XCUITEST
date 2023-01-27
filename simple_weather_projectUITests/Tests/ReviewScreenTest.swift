@@ -11,9 +11,11 @@ class ReviewScreenTest:BaseTest{
 
     let reviewScreen = ReviewScreen()
     let weatherManager = WeatherManager()
+    let utils = Utils()
     
     // Test Data
-    let cityName = ReviewScreenData.cityName.rawValue
+    lazy var cityName = utils.getReviewScreenTestData().cityName
+    
     
     // TC1: Verify for Searched city, City Name,Current Environment Status,Temp are showing Correctly or not
     func test1_Basic_Temp_Check(){

@@ -37,6 +37,13 @@ class Utils{
         let country: String
     }
     
+    struct ReviewScreenTestData: Decodable {
+        var cityName: String
+    }
+    
+    struct CommandTestData: Decodable {
+        var didNumber: String
+    }
 
         func getWeatherData(city:String,apicompletionHandler: @escaping (_ data:WeatherData?) -> Void){
         let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=ae33ba58ccfc685593adadaaac3626da&units=metric"
@@ -63,6 +70,31 @@ class Utils{
         })
 
         apicall.resume()
+    }
+    
+    
+    func getReviewScreenTestData() -> ReviewScreenTestData {
+        // Get the path to your JSON file
+        let fileURL = URL(fileURLWithPath: "/Users/auntoracharja/Work/SQA/Automation/XCUITEST/simpleweather_app/simple_weather_projectUITests/TestData/ReviewScreenData.json")
+        
+        // Read the JSON data from the file
+        let jsonData = try! Data(contentsOf: fileURL)
+        // Use JSONDecoder to convert the JSON data to your struct
+        let decoder = JSONDecoder()
+        let data = try! decoder.decode(ReviewScreenTestData.self, from: jsonData)
+        return data
+    }
+    
+    func getCommandTestData() -> CommandTestData {
+        // Get the path to your JSON file
+        let fileURL = URL(fileURLWithPath: "/Users/auntoracharja/Work/SQA/Automation/XCUITEST/simpleweather_app/simple_weather_projectUITests/TestData/CommandData.json")
+        
+        // Read the JSON data from the file
+        let jsonData = try! Data(contentsOf: fileURL)
+        // Use JSONDecoder to convert the JSON data to your struct
+        let decoder = JSONDecoder()
+        let data = try! decoder.decode(CommandTestData.self, from: jsonData)
+        return data
     }
 
 
