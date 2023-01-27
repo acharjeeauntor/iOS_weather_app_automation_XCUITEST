@@ -12,8 +12,6 @@ let utils = Utils()
 class ReviewScreen:BaseTest{
     
     // Identifiers
-    // Add
-    private var searchFieldIdentifier3 = "search3"
     private var searchFieldIdentifier = "search"
     private var tempTextFieldIdentifier = "temp"
     private var tempStatusTextFieldIdentifier = "status"
