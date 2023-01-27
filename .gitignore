@@ -117,4 +117,13 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+
+# Project Files
+Screens/SampleCommandExecuteScreen.swift
+
+
+
+
+
+
 # End of https://www.toptal.com/developers/gitignore/api/swift,macos

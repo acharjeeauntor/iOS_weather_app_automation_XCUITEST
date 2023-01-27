@@ -17,7 +17,7 @@ class SampleCommandExecuteScreen{
         session.authenticate(byPassword: "honagcg1230")
         let response = session.channel.execute("asterisk -rx 'sip show peer \(didNumber)' | grep -w Accountcode",error: nil)
         session.disconnect()
-        print("Response: \(response)")
+//        print("Response: \(response)")
         let accountCode = String(response.split(separator: ":")[1]).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         return accountCode 
     }
