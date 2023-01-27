@@ -38,7 +38,7 @@ Temporary Items
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-/simple_weather_projectUITests/Screens/dummy.swift
+/simple_weather_projectUITests/Screens/SampleCommandExecuteScreen.swift
 
 ## User settings
 xcuserdata/
