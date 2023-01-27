@@ -16,6 +16,8 @@ class CommandExecuteTest:BaseTest{
     // Test Data
     lazy var DID = utils.getCommandTestData().didNumber
     
+    // lazy var DID = utils.getCommandTestData().didNumber
+    
     
     // TC1: Verify Account code from Asterisk server and DID number is correct or not
     func test1_getAccountCode(){
