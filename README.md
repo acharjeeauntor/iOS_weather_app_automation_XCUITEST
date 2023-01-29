@@ -56,14 +56,14 @@ SimpleWeather App - uses the [OpenWeather API](https://openweathermap.org) to fe
 2. Add a Constants.swift file in the root folder of your project (same folder with Info.plist, Assets.xcassets, etc)
 3. Add the OpenWeatherMap API key and URL
 
-####### Automation Testing Part
+## Automation Testing Part
 
 1. Automation Framework: XCUITEST
 2. Language: Swift
 3. Design Pattern: POM
 4. Report: Built-In Html Report
 
-## Test Cover/Task:
+### Test Cover/Task:
 
 1. Test Data Validation From Application UI
 2. Test Data Validation From Weather API Calling
@@ -75,9 +75,9 @@ SimpleWeather App - uses the [OpenWeather API](https://openweathermap.org) to fe
 8. Run Test in the different Configuration
 9. Run Test in Parallel
 
-## Html Report Screenshot:
+### Html Report Screenshot:
 <img width="1435" alt="Screenshot 2023-01-29 at 11 00 15 PM" src="https://user-images.githubusercontent.com/38497405/215342956-c1765103-f200-4c6c-8f04-44f6c8fe823d.png">
 
-## Sample Video:
+### Sample Video:
 
 
