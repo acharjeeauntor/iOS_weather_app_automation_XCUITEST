@@ -69,11 +69,12 @@ SimpleWeather App - uses the [OpenWeather API](https://openweathermap.org) to fe
 2. Test Data Validation From Weather API Calling
 3. Test Data Validation From Development Function Return value/Data
 4. Test Data Validation From Asterisk / Server Side Validation
-5. Html Report Generate
-6. Automatic Screenshot attched with the HTML Report
-7. Run Test in the different Test Plan (e.g. Smoke,Sanity,Regression)
-8. Run Test in the different Configuration
-9. Run Test in Parallel
+5. Ensure Security of Server Configuration Information (Secret configuration file)
+6. Html Report Generate
+7. Automatic Screenshot attched with the HTML Report
+8. Run Test in the different Test Plan (e.g. Smoke,Sanity,Regression)
+9. Run Test in the different Configuration
+10. Run Test in Parallel
 
 ### Html Report Screenshot:
 <img width="1435" alt="Screenshot 2023-01-29 at 11 00 15 PM" src="https://user-images.githubusercontent.com/38497405/215342956-c1765103-f200-4c6c-8f04-44f6c8fe823d.png">
