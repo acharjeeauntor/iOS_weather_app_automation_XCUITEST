@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Test Plan/CommandExecutionPlan.xctestplan">
+      location = "group:Test Plan/CommandExecutePlan.xctestplan">
    </FileRef>
    <FileRef
       location = "group:Test Plan/APICallPlan.xctestplan">

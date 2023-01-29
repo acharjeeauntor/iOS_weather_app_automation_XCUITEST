@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "37880981-890E-4D13-86F8-B91598E05E0A",
+      "id" : "11D05E20-A0EE-4BED-9EE6-4EF672BB5AFD",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,6 +9,8 @@
     }
   ],
   "defaultOptions" : {
+    "repeatInNewRunnerProcess" : true,
+    "testRepetitionMode" : "retryOnFailure",
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [

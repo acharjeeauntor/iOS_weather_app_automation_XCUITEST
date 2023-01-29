@@ -9,16 +9,19 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
+    "areLocalizationScreenshotsEnabled" : true,
+    "repeatInNewRunnerProcess" : true,
     "targetForVariableExpansion" : {
       "containerPath" : "container:simple_weather_project.xcodeproj",
       "identifier" : "73D42D7728A8507800B05019",
       "name" : "simple_weather_project"
     },
-    "userAttachmentLifetime" : "keepAlways"
+    "testRepetitionMode" : "retryOnFailure",
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:simple_weather_project.xcodeproj",
         "identifier" : "2AA0A799296B27E400A81B67",

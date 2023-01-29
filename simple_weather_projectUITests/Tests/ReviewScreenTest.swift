@@ -101,7 +101,7 @@ class ReviewScreenTest:BaseTest{
     
     // TC3: Get Location name from main project function return value
     func test3_Peoject_Function_call(){
-        takeScreenshot(name: "test3_Peoject_Function_call")
+       // takeScreenshot(name: "test3_Peoject_Function_call")
         
         // weatherManager.getAddress(name: cityName), Here getAddress() is the public function of WeatherManager class which is created inside project core file.
         let returnValue = weatherManager.getAddress(name: cityName)

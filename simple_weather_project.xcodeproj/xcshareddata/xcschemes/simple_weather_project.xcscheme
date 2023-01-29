@@ -29,10 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       userAttachmentLifetime = "keepAlways">
       <TestPlans>
-         <TestPlanReference
-            reference = "container:Test Plan/CommandExecutionPlan.xctestplan"
-            default = "YES">
-         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
