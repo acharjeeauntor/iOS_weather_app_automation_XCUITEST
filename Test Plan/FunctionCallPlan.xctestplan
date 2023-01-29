@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "9610BC0D-A542-42EA-80E7-88BDDE5CD7A7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:simple_weather_project.xcodeproj",
+      "identifier" : "73D42D7728A8507800B05019",
+      "name" : "simple_weather_project"
+    },
+    "userAttachmentLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "CommandExecuteTest",
+        "ReviewScreenTest\/test1_Basic_Temp_Check()",
+        "ReviewScreenTest\/test2_Advance_Temp_Check()"
+      ],
+      "target" : {
+        "containerPath" : "container:simple_weather_project.xcodeproj",
+        "identifier" : "2AA0A799296B27E400A81B67",
+        "name" : "simple_weather_projectUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

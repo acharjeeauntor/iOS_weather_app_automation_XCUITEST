@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A6CFF296F245F004E8DB5 /* XCUIElement.swift */; };
-		2A3C549A297AAB340051A5C7 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72528AEDAE600CB1C5B /* WeatherManager.swift */; };
 		2AA0669C296E460F0020E5D4 /* ReviewScreenData.json in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0669B296E460F0020E5D4 /* ReviewScreenData.json */; };
 		2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7A8296B282A00A81B67 /* BaseTest.swift */; };
 		2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A7AA296B2C0E00A81B67 /* ReviewScreen.swift */; };
@@ -17,6 +16,7 @@
 		2AC7BF2B2982D47F0022B6FC /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7BF2A2982D47F0022B6FC /* XCTestCase.swift */; };
 		2ADC35422983A49E00AFEB4D /* CommandExecuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC35412983A49E00AFEB4D /* CommandExecuteTest.swift */; };
 		2ADC35442983A50300AFEB4D /* SampleCommandExecuteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC35432983A50300AFEB4D /* SampleCommandExecuteScreen.swift */; };
+		2AE2A6BC29845A4F007A1702 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72528AEDAE600CB1C5B /* WeatherManager.swift */; };
 		2AF46E12297AE8FC00353A3C /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72128AEDA4F00CB1C5B /* WeatherData.swift */; };
 		2AF46E13297AE90000353A3C /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EC72328AEDA6B00CB1C5B /* WeatherModel.swift */; };
 		2AF9218C29840D4C00146144 /* CommandData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF9218B29840D4C00146144 /* CommandData.json */; };
@@ -406,10 +406,10 @@
 				2AF9219429842A7000146144 /* ServerConfig.swift in Sources */,
 				2ADC35422983A49E00AFEB4D /* CommandExecuteTest.swift in Sources */,
 				2ADC35442983A50300AFEB4D /* SampleCommandExecuteScreen.swift in Sources */,
+				2AE2A6BC29845A4F007A1702 /* WeatherManager.swift in Sources */,
 				2AA0A7A9296B282A00A81B67 /* BaseTest.swift in Sources */,
 				2A2A6D00296F245F004E8DB5 /* XCUIElement.swift in Sources */,
 				2AA0669C296E460F0020E5D4 /* ReviewScreenData.json in Sources */,
-				2A3C549A297AAB340051A5C7 /* WeatherManager.swift in Sources */,
 				2AF46E13297AE90000353A3C /* WeatherModel.swift in Sources */,
 				2AA0A7AD296B2C1C00A81B67 /* ReviewScreenTest.swift in Sources */,
 				2AA0A7AB296B2C0E00A81B67 /* ReviewScreen.swift in Sources */,

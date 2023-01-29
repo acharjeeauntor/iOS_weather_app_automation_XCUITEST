@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "37880981-890E-4D13-86F8-B91598E05E0A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "ReviewScreenTest"
+      ],
+      "target" : {
+        "containerPath" : "container:simple_weather_project.xcodeproj",
+        "identifier" : "2AA0A799296B27E400A81B67",
+        "name" : "simple_weather_projectUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

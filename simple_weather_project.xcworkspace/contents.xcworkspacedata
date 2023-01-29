@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Test Plan/CommandExecutionPlan.xctestplan">
+   </FileRef>
+   <FileRef
+      location = "group:Test Plan/APICallPlan.xctestplan">
+   </FileRef>
+   <FileRef
+      location = "group:Test Plan/RegressionTest.xctestplan">
+   </FileRef>
+   <FileRef
+      location = "group:Test Plan/FunctionCallPlan.xctestplan">
+   </FileRef>
+   <FileRef
       location = "group:simple_weather_project.xcodeproj">
    </FileRef>
    <FileRef
